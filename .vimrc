@@ -15,6 +15,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 call neobundle#end()
 NeoBundle 'git://github.com/davidhalter/jedi-vim.git'
 
+set fileencodings=utf-8,cp932,euc-jp,sjis,iso-2022-jp
 set encoding=utf-8
 set fileformats=unix,dos,mac
 set fileformat=unix
