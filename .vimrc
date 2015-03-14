@@ -14,6 +14,4 @@ set backspace=start,indent,eol
 set mouse=a
 set wildmenu wildmode=list:full
 syntax on
-imap :undo
-nmap :undo
 let python_highlight_all=1
