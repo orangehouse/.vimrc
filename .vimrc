@@ -1,7 +1,19 @@
 "Linux/Mac ~/.vimrc
-"Windows ~/.vimfiles
+           ~/.vim/
+"Windows ~/_vimrc or ~/vimfiles/vimrc
+         ~/vimfiles/
 set nocompatible
 set hidden
+set undofile
+
+if has('vim_starting')                                                                                                      
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+endif
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+call neobundle#end()
+NeoBundle 'git://github.com/davidhalter/jedi-vim.git'
+
 set encoding=utf-8
 set fileformats=unix,dos,mac
 set fileformat=unix
@@ -34,3 +46,6 @@ highlight StatusLine term=none cterm=none ctermfg=black ctermbg=grey
 highlight CursorLine term=none cterm=none ctermfg=none ctermbg=darkgray
 syntax on
 let python_highlight_all=1
+
+NeoBundleCheck
+filetype plugin indent on 
