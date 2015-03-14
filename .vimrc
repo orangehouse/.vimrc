@@ -4,10 +4,16 @@ set incsearch
 set hlsearch
 set showmatch
 set matchtime=2
+set cursorline
 set number
+set laststatus=3
+set statusline=%F%r%h%l%c%p%=
 set wrap
 set textwidth
 set backspace=start,indent,eol
 set mouse=a
+set wildmenu wildmode=list:full
 syntax on
+imap :undo
+nmap :undo
 let python_highlight_all=1
