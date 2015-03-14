@@ -9,7 +9,7 @@ set number
 set laststatus=3
 set statusline=%F%r%h%l%c%p%=
 set wrap
-set textwidth
+set textwidth=0
 set backspace=start,indent,eol
 set mouse=a
 set wildmenu wildmode=list:full
