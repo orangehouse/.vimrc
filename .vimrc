@@ -1,7 +1,8 @@
 "Linux/Mac ~/.vimrc
-           ~/.vim/
+"          ~/.vim/
 "Windows ~/_vimrc or ~/vimfiles/vimrc
-         ~/vimfiles/
+"        ~/vimfiles/
+
 set nocompatible
 set hidden
 set undofile
