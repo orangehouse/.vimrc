@@ -2,6 +2,9 @@
 "          ~/.vim/
 "Windows ~/_vimrc or ~/vimfiles/vimrc
 "        ~/vimfiles/
+"mkdir -p ~/.vim/bundle
+"cd ~/.vim/bundle
+"git clone https://github.com/Shougo/neobundle.vim.git
 
 set nocompatible
 set hidden
@@ -50,4 +53,4 @@ syntax on
 let python_highlight_all=1
 
 NeoBundleCheck
-filetype plugin indent on 
+filetype plugin indent on
