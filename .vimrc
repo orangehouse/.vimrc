@@ -1,0 +1,13 @@
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set showmatch
+set matchtime=2
+set number
+set wrap
+set textwidth
+set backspace=start,indent,eol
+set mouse=a
+syntax on
+let python_highlight_all=1
