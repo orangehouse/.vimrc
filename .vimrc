@@ -10,7 +10,7 @@ set nocompatible
 set hidden
 set undofile
 
-if has('vim_starting')                                                                                                      
+if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
 endif
 call neobundle#begin(expand('~/.vim/bundle/'))
