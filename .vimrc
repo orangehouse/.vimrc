@@ -5,18 +5,19 @@
 "mkdir -p ~/.vim/bundle
 "cd ~/.vim/bundle
 "git clone https://github.com/Shougo/neobundle.vim.git
+"git clone https://github.com/davidhalter/jedi-vim.git
 
 set nocompatible
 set hidden
 set undofile
 
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-endif
+"if has('vim_starting')
+"endif
+set runtimepath+=~/.vim/bundle/neobundle.vim
 call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'https://github.com/davidhalter/jedi-vim.git'
 call neobundle#end()
-NeoBundle 'git://github.com/davidhalter/jedi-vim.git'
 
 set fileencodings=utf-8,cp932,euc-jp,sjis,iso-2022-jp
 set encoding=utf-8
