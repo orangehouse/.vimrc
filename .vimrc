@@ -29,6 +29,8 @@ set hlsearch
 set showmatch
 set matchtime=2
 set cursorline
+set list
+set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
 set number
 set showcmd
 set laststatus=2
@@ -41,6 +43,24 @@ set wildmenu wildmode=list:full
 set whichwrap=b,s,h,l,<,>,[,]
 set expandtab
 set tabstop=2
+set shiftwidth=2
+set nowritebackup
+set nobackup
+set noswapfile
+set t_vb=
+set novisualbell
+set clipboard+=unnamed
+
+inoremap jj <Esc>
+nmap <silent> <Esc><Esc> :nohlsearch<CR>
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
+autocmd BufNewFile,BufRead *.py nnoremap <C-e> :!python %
 
 if has('mouse')
   set mouse=a
